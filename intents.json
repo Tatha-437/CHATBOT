@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand","Can you be more specific"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through the process of compettive exams","Can get You a consultant booking, give an estimated rank based on your percentile", "Offering support for Exam support,Calculate approximate Rank and ur aprroximate college,Get uyou a bokking with a consultant"],
+         "context": [""]
+        },
+        {"tag": "marks",
+         "patterns": ["How to check my marks?", "What is my marks", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["TO Check your marks please visit the official website of the exam"],
+         "context": [""]
+        },
+        {"tag": "rank",
+         "patterns": ["Can You estimate my rank", "I got marks what should be my rank", "What could be my rank", "Estimated rank", "whats my possible rank" ],
+         "responses": ["Navigating to a web page copy and paste the link to continue www.google.com"],
+         "context": [""]
+        },
+        {"tag": "IIT",
+         "patterns": ["What is an IIT", "What is IIT-JEE", "How is IIT-JEE"],
+         "responses": ["IIT= Indian Institute of Technology There are 23 IITs in India out of which only 5 are prominent. To get admission in an IIT, one has to crack an exam called “JEE Advanced” which happens to be the world’s second toughest exam. Students spend years preparing for it. Out the 1.5 million students who take the exam every year, only 4000 qualify for the prominent IITs. The syllabus is humongous, competition cut-throat, stress lethal and difficulty level is insane. Only the best minds of the country are selected in IITs. And these students are called IITians.","Stands for Indian Institute of Technology Joint entrance Examination .This examination is conducted every year in the last week of May and is one of the toughest in the world. Cracking this examination makes you fall under the category of few bright minds of India and gives you the privilege of getting a B-tech or a M- tech degree also if you take a 5 yr course in Engineering. IIT’s are the most sought after colleges in India which give engineering degree to only 12000 students in the whole country. "],
+         "context": ["rank"]
+        },
+        {"tag": "Top IITS",
+         "patterns": ["What are the top IITs in INDIA","What is the top iit"],
+         "responses": ["1)Indian Institute of Technology- Madras\n2)Indian Institute of Technology-Bombay\n3)Indian Institute of Technology-Kharagpur\n4)Indian Institute of Technology-Kanpur\n5)Indian Institute of Technology-Bombay\n"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
